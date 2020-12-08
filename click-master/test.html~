@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Photographs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading-0 is-loading-1 is-loading-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+					<div class="logohead">
+						<img src="/home/david/Dropbox/Code/HTML/click-master/images/logo.png" alt="" width="150">
+					</div>	
+						<p class="text-center">Photos by D.J. Platt</p>
+					</header>
+
+				<!-- Thumbnail -->
+					<section id="thumbnails">
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/01.jpg" data-position="left center" ><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/01.jpg" alt="" /></a>
+							<p>Sidekick on Killbear Beach</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/02.jpg" data-position="left center"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/02.jpg" /></a>
+							<p>Tied up at a lock on the Rideau Canal.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/03.jpg" ><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/03.jpg" alt="" /></a>
+							<p>Solace tied up at Toronto Harbourfrount</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/04.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/04.jpg" alt="" /></a>
+							<p>Pinery Beach</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/05.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/05.jpg" alt="" /></a>
+							<p>Tied up in Confederation Harbour.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/06.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/06.jpg" alt="" /></a>
+							<p>Wanderer reaching to Whitby on Lake Ontario</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/07.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/07.jpg" alt="" /></a>
+							<p>Mount Arrowhead</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/08.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/08.jpg" alt="" /></a>
+							<p>Tied up along the public dock in Cobourg.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/09.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/09.jpg" alt="" /></a>
+							<p>Towing Sidekick through the Murray Canal</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/10.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/10.jpg" alt="" /></a>
+							<p>Dock at Endymion in the Thousand Islands.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/11.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/11.jpg" alt="" /></a>
+							<p>Anchored off McDonald Island in the Thousand Islands</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="/home/david/Dropbox/Code/HTML/click-master/images/fulls/12.jpg"><img src="/home/david/Dropbox/Code/HTML/click-master/images/thumbs/12.jpg" alt="" /></a>
+							<p>Georgian Bay Sunset</p>
+						</article>
+                        
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright text-center">
+							<li>&copy; Click</li>
+							<li>Design: <a href="http:themewagon.com">Themewagon</a></li>
+							
+						</ul>
+					</footer>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			 $('.toggle').click(function(){
+			 	$('.caption').toggle();
+			 })
+			</script>
+	</body>
+</html>

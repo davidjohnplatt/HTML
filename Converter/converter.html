@@ -1,0 +1,67 @@
+       <h2>Price Converter</h2>
+       <script>
+          function replaceSelection(field, word, guideString) {    
+            field.value = word + " " + guideString;       
+          }
+          
+          function formatNumber (num, places) {
+
+             const x = Math.pow(10,places);
+             return Math.round(num * x) / x;
+           }
+           
+          function process() {
+            var x, y, text;
+            var selection, price, quantity;
+            price = document.getElementById("price").value;
+            quantity = document.getElementById("quantity").value;
+
+            if (isNaN(price) || price ==  "") {
+               window.alert("Numeric Price required");
+               return;
+            }
+          
+            if (isNaN(quantity) || quantity == "") {
+               window.alert("Numeric Quantity required");
+               return;
+            }
+          
+            if (Lbs.checked) {
+                selection = Lbs.value;
+                quantity = quantity;
+            }
+            else if (Kilos.checked) {
+                selection = Kilos.value;
+                quantity = quantity * 2.2;
+            }
+            else if (Grams.checked) {
+                selection = Grams.value;
+                quantity = quantity * 2.2 /1000;
+            }
+            else if (Ozs.checked) {
+                selection = Ozs.value;
+                quantity = quantity * 16;
+            }
+            else {
+                window.alert ("radio Button must be selected");
+            }
+           
+            replaceSelection(Result, formatNumber(price / quantity,2), "price per pound");
+         }
+
+      </script>
+   </head>
+   <body>
+      <form>
+          <label for="price">Price: 
+          <input type="text" id="price" name="price" ><br><br>
+          <label for="quantity">Quantity: 
+          <input type="text" id="quantity" name="quantity"><br><br>
+          <input type="radio" name="colors" id="Lbs">Lbs<br>
+          <input type="radio" name="colors" id="Kilos">Kilos<br>
+          <input type="radio" name="colors" id="Ozs">Ozs<br>
+          <input type="radio" name="colors" id="Grams">Grams<br><br><br>
+          <button type="button" onclick="process()"()>Submit</button><br><br>
+          <input type=text id="Result"/>           
+    </body>
+</html>
