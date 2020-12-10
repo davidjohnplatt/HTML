@@ -1,5 +1,25 @@
-       <h2>Price Converter</h2>
-       <script>
+     
+       <style>
+        #grid {
+            background-color: yellow;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns: 100px auto;
+        }
+        
+        .grid-item {
+            background-color: yellow;
+            font-size: 20px;
+            padding: 10px;
+        }
+        
+        .heading {
+            text-align: center;
+        }
+        </style>
+        <script>
           function replaceSelection(field, word, guideString) {    
             field.value = word + " " + guideString;       
           }
@@ -46,22 +66,46 @@
                 window.alert ("radio Button must be selected");
             }
            
-            replaceSelection(Result, formatNumber(price / quantity,2), "price per pound");
+            replaceSelection(Result, formatNumber(price / quantity,2), " per pound");
          }
 
       </script>
    </head>
    <body>
-      <form>
-          <label for="price">Price: 
-          <input type="text" id="price" name="price" ><br><br>
-          <label for="quantity">Quantity: 
-          <input type="text" id="quantity" name="quantity"><br><br>
-          <input type="radio" name="colors" id="Lbs">Lbs<br>
-          <input type="radio" name="colors" id="Kilos">Kilos<br>
-          <input type="radio" name="colors" id="Ozs">Ozs<br>
-          <input type="radio" name="colors" id="Grams">Grams<br><br><br>
-          <button type="button" onclick="process()"()>Submit</button><br><br>
-          <input type=text id="Result"/>           
+      <form>        
+          <div id="grid">
+             <div>
+             </div>
+             <div>
+                 <h1>Price Converter</h1>
+             </div>
+             <div>
+                <label class="grid-item" for="price">Price: 
+             </div>
+             <div>
+                <input type="text" id="price" name="price" ><br><br>
+             </div>
+             <div>
+                <label class="grid-item" for="quantity">Quantity: 
+             </div>
+             <div>
+               <input type="text" id="quantity" name="quantity"><br><br>
+             </div>
+             <div>
+               <input type="radio" name="colors" id="Lbs">Lbs<br>
+               <input type="radio" name="colors" id="Kilos">Kilos<br>
+               <input type="radio" name="colors" id="Ozs">Ozs<br>
+               <input type="radio" name="colors" id="Grams">Grams<br><br><br>
+            </div>          
+            <div>
+            </div>
+            <div>
+               <button type="button" onclick="process()"()>Submit</button><br><br>
+            </div>
+            <div>
+            </div>
+                <input type=text id="Result"/>  
+            </div>
+       </form>         
     </body>
 </html>
