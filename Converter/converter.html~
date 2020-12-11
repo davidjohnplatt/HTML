@@ -32,7 +32,7 @@
             }
             else if (Kilos.checked) {
                 selection = Kilos.value;
-                quantity = quantity * 0.45359237;
+                quantity = quantity * 2.2;
             }
             else if (Grams.checked) {
                 selection = Grams.value;
