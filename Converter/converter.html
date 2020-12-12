@@ -1,5 +1,6 @@
    <html>  
        <meta charset="UTF-8">
+       <title>Price Comparison Tool</title>
        <style>
         #grid {
             background-color: yellow;
@@ -40,7 +41,7 @@
            }
            
            function writeTape(){
-             document.getElementById("cashTape").value = "hai";
+             cashTape.value = document.getElementById("Result").value + String.fromCharCode(13) + document.getElementById("cashTape").value;
            }
            
           function process() {
@@ -79,7 +80,7 @@
                 window.alert ("radio Button must be selected");
             }
            
-            replaceSelection(cashTape, document.getElementById("Result").value, " ");
+            writeTape();
             replaceSelection(Result, formatNumber(price / quantity,2), " per pound");
          }
 
@@ -118,7 +119,7 @@
              <div>
              </div>
              <div>
-                <textarea  name="cashTape" id=cashTape wrap="hard" rows="4" cols="28">
+                <textarea  name="cashTape" id=cashTape wrap="hard" rows="4" cols="25">
                 </textarea>
             </div>
        </form>         
