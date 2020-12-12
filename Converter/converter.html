@@ -1,11 +1,12 @@
-     
+   <html>  
+       <meta charset="UTF-8">
        <style>
         #grid {
             background-color: yellow;
             display: grid;
             padding: 20px;
             grid-column-gap: 20px;
-            grid-row-gap:10px;
+            grid-row-gap: 10px;
             grid-template-columns: 100px auto;
         }
         
@@ -18,16 +19,28 @@
         .heading {
             text-align: center;
         }
+        
+        h1{
+            background-color: white;  
+        }
+        
+        textarea {
+            resize: none;
+        }
         </style>
-        <script>
+        <script  type="text/javascript">
+       
           function replaceSelection(field, word, guideString) {    
             field.value = word + " " + guideString;       
           }
           
           function formatNumber (num, places) {
-
              const x = Math.pow(10,places);
              return Math.round(num * x) / x;
+           }
+           
+           function writeTape(){
+             document.getElementById("cashTape").value = "hai";
            }
            
           function process() {
@@ -66,45 +79,47 @@
                 window.alert ("radio Button must be selected");
             }
            
+            replaceSelection(cashTape, document.getElementById("Result").value, " ");
             replaceSelection(Result, formatNumber(price / quantity,2), " per pound");
          }
 
       </script>
    </head>
    <body>
-      <form>        
+      <form>     
+          <h1>Price Converter</h1>    
           <div id="grid">
-             <div>
-             </div>
-             <div>
-                 <h1>Price Converter</h1>
-             </div>
              <div>
                 <label class="grid-item" for="price">Price: 
              </div>
              <div>
-                <input type="text" id="price" name="price" ><br><br>
+                <input type="text" id="price" name="price" >
              </div>
              <div>
                 <label class="grid-item" for="quantity">Quantity: 
              </div>
              <div>
-               <input type="text" id="quantity" name="quantity"><br><br>
+               <input type="text" id="quantity" name="quantity">
              </div>
              <div>
                <input type="radio" name="colors" id="Lbs">Lbs<br>
                <input type="radio" name="colors" id="Kilos">Kilos<br>
                <input type="radio" name="colors" id="Ozs">Ozs<br>
-               <input type="radio" name="colors" id="Grams">Grams<br><br><br>
-            </div>          
-            <div>
-            </div>
-            <div>
+               <input type="radio" name="colors" id="Grams">Grams
+             </div>          
+             <div>
+             </div>
+             <div>
                <button type="button" onclick="process()"()>Submit</button><br><br>
-            </div>
-            <div>
-            </div>
-                <input type=text id="Result"/>  
+             </div>
+             <div>
+                <input type=text  id="Result"/>  
+             </div>
+             <div>
+             </div>
+             <div>
+                <textarea  name="cashTape" id=cashTape wrap="hard" rows="4" cols="28">
+                </textarea>
             </div>
        </form>         
     </body>
