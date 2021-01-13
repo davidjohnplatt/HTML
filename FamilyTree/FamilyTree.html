@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+    <head>  
+        <title>The Platts</title>
+        
+        <style>
+         #grid1 {
+            background-color: blue;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns:  auto ;
+            text-align: center;
+        }
+         #grid2 {
+            background-color: blue;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns:  auto auto ;
+            text-align: center;
+        }
+        #grid4 {
+            background-color: blue;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns:  auto auto auto auto;
+        }
+        
+        #grid5 {
+            background-color: blue;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns:  auto auto auto auto auto;
+        }
+        
+        #grid6 {
+            background-color: blue;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns:  auto auto auto auto auto auto;
+        }
+        
+        #grid8 {
+            background-color: blue;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns:  auto auto auto auto auto auto auto auto;
+        }
+        
+         #gridspace {
+            background-color: blue;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap:10px;
+            grid-template-columns:  20px ;
+        }
+        
+        .grid-item {
+            background-color: white;
+            font-size: 20px;
+            padding: 20px;
+        }
+        
+        .grid-blank {
+            background-color: blue;
+            font-size: 20px;
+            padding: 20px;
+        }
+        
+        .heading {
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">Platts</h1>
+        
+<div id = grid4> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandma Platt","","","","0")'>Grandma Platt</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandpa Platt","","","","0")'>Grandpa Platt</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandma Thurlow","","","","0")'>Grandma Thurlow</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandpa Thurlow","","","","0")'>Grandpa Thurlow</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Lawrence Platt","","","1006.jpg","1952")'>Lawrence Platt</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Florence May Thurlow","","","MayPlatt.jpg","1952")'>Florence May Thurlow</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Rita Wilkins","Aug 1929","Jun 2008","RitaPlatt.jpg","1952")'>Rita Wilkins</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("John Platt","Oct 1922","May 2010","JohnPlatt.jpg","1952")'>John Platt</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Eileen Boyle","Mar 2014","","","0")'>Eileen Boyle</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("David Platt","Aug 1953","","","0")'>David Platt</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Paul Mooney","Dec 1983","","","0")'>Paul Mooney</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Jessica Platt","Apr 1983","","","0")'>Jessica Platt</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid1> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Jason Mooney","Mar 2016","","","0")'>Jason Mooney</button>
+      </ul>
+   </div>
+</div> 
+
+
+
+
+       </div>
+       <script type="text/javascript">
+            function popWindow(name,dob,dod,photo,pdate) {
+               sessionStorage.setItem("NAME",name)
+               sessionStorage.setItem("DOB",dob)
+               sessionStorage.setItem("DOD",dod)
+               sessionStorage.setItem("PHOTO",photo)
+               sessionStorage.setItem("PDATE",pdate)
+               var newWindow = window.open("newWindow.html", "_blank", "top=100, left=100, width=800, height=500");
+              
+            }
+
+          
+
+        </script>
+    </body>
+</html>

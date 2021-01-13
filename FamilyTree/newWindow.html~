@@ -1,0 +1,79 @@
+<meta charset="utf-8" />
+<html>
+	<head>   
+		 <style>
+		      #grid {
+		         background-color: gray;
+		         display: grid;
+		         padding: 20px;
+		         grid-column-gap: 20px;
+		         grid-row-gap:10px;
+		         grid-template-columns:  50px auto 50px auto;
+		      } 
+		 </style>
+	</head>
+	<body>
+		<div id="grid">
+			<div>
+			   <label>Name:</label>	         
+			</div>
+			  <div>	         
+			   <input type="text" id="Name">
+			</div>
+			 <div>
+			   <label>DOB:</label>	         
+			</div>
+			<div>	       
+			   <input type="text" id="Dobdate">
+			</div>
+			 <div>
+			   <label>DOD:</label>	        
+			</div>
+			<div>	        
+			   <input type="text" id="Doddate">
+			</div>
+			<div>
+			   <label>Photo Year:</label>	        
+			</div>
+			 <div>	       
+			   <input type="text" id="PhotoDate">
+			</div>
+		</div>
+		<script>  
+		//  photo aspect reatio should be 3:4
+		   function myFunction() {
+		      var x = document.createElement("IMG");
+		      x.setAttribute("src", photo[Pid]);
+		      x.setAttribute("width", "304");
+		      x.setAttribute("height", "228");
+		      x.setAttribute("alt", "The Pulpit Rock");
+		      document.body.appendChild(x);
+		   }
+		
+		   function show_image(src, width, height, alt) {
+		      var img = document.createElement("img");
+		      img.src = src;
+		      img.width = width;
+		      img.height = height;
+		      img.alt = alt;
+		      document.body.appendChild(img);             
+		   }
+		   
+		   const id  = ['1000', '1001', '1003', '1004', '1005', '1006', '1007', '1008', '1009', '1010'];
+		   const name  = ['Grandpa Thurlow', 'Grandma Thurlow', 'Florence May Thurlow', 'Grandpa Platt', 'Grandma Platt', 'Lawrence Platt', 'Topsy Platt', 'Sydney Walker', 'John Platt', 'Rita Wilkins'];
+		   const photo = ['', '', 'MayPlatt.jpg', '', '', '1006.jpg', '', '', 'JohnPlatt.jpg', 'RitaPlatt.jpg'];
+		   const pyear = [0, 0, 1952, 0, 0, 1952, 0, 0, 1952, 1952];
+		   const Dob = ['', '', '', '', '', '', '', '', 'Oct 1922', 'Aug 1929'];
+		   const Dod = ['', '', '', '', '', '', '', '2020', 'May 2010', 'May 2008'];
+		   
+		  
+		   document.getElementById("Name").value = sessionStorage.getItem("PID"); 
+		   document.getElementById("Dobdate").value = sessionStorage.getItem("DOB")
+		   document.getElementById("Doddate").value = sessionStorage.getItem("DOD")
+		   document.getElementById("PhotoDate").value = sessionStorage.getItem("PDATE")
+		  
+		   show_image(sessionStorage.getItem("PHOTO"), 270, 360, 'No Photo available');
+		  
+		</script>
+	</body>
+</html>

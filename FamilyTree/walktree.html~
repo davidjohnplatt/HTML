@@ -1,0 +1,77 @@
+<div id = grid4> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandma Platt","","","","0")'>Grandma Platt</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandpa Platt","","","","0")'>Grandpa Platt</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandma Thurlow","","","","0")'>Grandma Thurlow</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Grandpa Thurlow","","","","0")'>Grandpa Thurlow</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Lawrence Platt","","","1006.jpg","1952")'>Lawrence Platt</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Florence May Thurlow","","","MayPlatt.jpg","1952")'>Florence May Thurlow</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Rita Wilkins","Aug 1929","Jun 2008","RitaPlatt.jpg","1952")'>Rita Wilkins</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("John Platt","Oct 1922","May 2010","JohnPlatt.jpg","1952")'>John Platt</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Eileen Boyle","Mar 2014","","","0")'>Eileen Boyle</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("David Platt","Aug 1953","","","0")'>David Platt</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid2> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Paul Mooney","Dec 1983","","","0")'>Paul Mooney</button>
+      </ul>
+   </div>
+   <div>
+      <ul>
+         <button onclick='popWindow("Jessica Platt","Apr 1983","","","0")'>Jessica Platt</button>
+      </ul>
+   </div>
+</div> 
+<div id = grid1> 
+   <div>
+      <ul>
+         <button onclick='popWindow("Jason Mooney","Mar 2016","","","0")'>Jason Mooney</button>
+      </ul>
+   </div>
+</div> 

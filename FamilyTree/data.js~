@@ -1,0 +1,57 @@
+					<div>
+					   <ul>
+					      <button onclick='popWindow(0)'>Grandpa Thurlow</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(1)'>Grandma Thurlow</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(2)'>Florence May Thurlow</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(3)'>Grandpa Platt</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(4)'>Grandma Platt</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(5)'>Lawrence Platt</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(6)'>Topsy Platt</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(7)'>Sydney Walker</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(8)'>John Platt</button>
+					   </ul>
+					</div>
+					<div>
+					   <ul>
+					      <button onclick='popWindow(9)'>Rita Wilkins</button>
+					   </ul>
+					</div>
+const id  = ['1000', '1001', '1002', '1003', '1004', '1005', '1006', '1007', '1008', '1009'];
+const name  = ['Grandpa Thurlow', 'Grandma Thurlow', 'Florence May Thurlow', 'Grandpa Platt', 'Grandma Platt', 'Lawrence Platt', 'Topsy Platt', 'Sydney Walker', 'John Platt', 'Rita Wilkins'];
+const photo = ['', '', 'MayPlatt.jpg', '', '', '1006.jpg', '', '', 'JohnPlatt.jpg', 'RitaPlatt.jpg'];
+const pyear = [0, 0, 1952, 0, 0, 1952, 0, 0, 1952, 1952];
+const dob = ['', '', '', '', '', '', '', '', 'Oct 1922', 'Aug 1929'];
+const dod = ['', '', '', '', '', '', '', '2020', 'May 2010', 'May 2008'];
+const index = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
